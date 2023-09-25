@@ -9,11 +9,11 @@
        * Gradle as Build tool
        * Springboot version: 3.1.4
        * PostgreSQL 14
- 4. Used Docker (Dockerfile and Docker compose) to containerize the application 
-        * commands to use to run the project: 
-             * gradle build
-             * docker build -t order_management .
-             * Go to infrastructure directory :
-                  * To start app: docker compose up
-                  * To stop app: docker compose down -v
+ 4. Used Docker (Dockerfile and Docker compose) to containerize the application :
+    * commands to use to run the project:
+        *  gradle build
+        *  docker build -t order_management .
+        *   Go to infrastructure directory :
+              * start app: docker compose up
+              * stop app: docker compose down -v
  6. To use Github actions #todo
