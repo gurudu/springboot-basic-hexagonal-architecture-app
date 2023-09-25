@@ -1,5 +1,11 @@
 # springboot-basic-hexagonal-architecture-app
   Basic springboot rest jpa application implemented following priciples of Hexagonal Architecture.
+## Requirements:
+   * Java 17 Installed
+   * Gradle (or any other build tool for Java)
+   * Any Java IDE
+   * Docker or Rancher desktop installed and running
+   * Testing (Optional): Postman and Tableplus to follow along, but any testing tool will work
 
 ## Features
  1. Sample Springboot web app using REST API, JPA, Hibernate
