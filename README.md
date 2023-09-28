@@ -1,5 +1,5 @@
-# springboot-basic-hexagonal-architecture-app
-  Basic springboot rest jpa application implemented following priciples of Hexagonal Architecture.
+# springboot-web-hexagonal-architecture-app
+  Basic springboot rest jpa application implemented following priciples of Hexagonal Architecture and monitored using Prometheus and Grafana.
 ## Requirements:
    * Java 17 Installed
    * Gradle (or any other build tool for Java)
@@ -22,4 +22,5 @@
         *   Go to infrastructure directory :
               * start app: docker compose up
               * stop app: docker compose down -v
- 6. To use Github actions #todo
+ 5. Monitored using Prometheus and Grafana
+ 6.  To use Github actions #todo
