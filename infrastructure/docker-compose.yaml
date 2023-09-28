@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  app:
+  demoapp:
     container_name: order_service
     image: order_management
     build: ..
@@ -36,6 +36,20 @@ services:
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PW}
     ports:
       - '5050:80'
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ../monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    volumes:
+      - ../monitoring/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
 
 volumes:
   order-data: # named volumes can be managed easier using docker-compose
